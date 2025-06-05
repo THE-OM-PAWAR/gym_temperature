@@ -34,7 +34,7 @@ export default function About() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Our Mission</h3>
               <p className="text-muted-foreground">
-                At AlphaCore Fitness, we believe in combining evidence-based training methods with the 
+                At Gym Temperature, we believe in combining evidence-based training methods with the 
                 power of community motivation. Our mission is to help you build strength, improve performance, 
                 and transform your body through consistent, smart training.
               </p>

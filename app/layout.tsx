@@ -17,8 +17,8 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: 'AlphaCore Fitness | Train Smart. Lift Heavy. Stay Consistent.',
-  description: 'AlphaCore Fitness combines science-based training with high-energy community motivation to help you achieve your fitness goals.',
+  title: 'Gym Temperature | Train Smart. Lift Heavy. Stay Consistent.',
+  description: 'Gym Temperature combines science-based training with high-energy community motivation to help you achieve your fitness goals.',
   keywords: 'gym, fitness, personal training, strength training, workout',
 };
 

@@ -78,7 +78,7 @@ export default function Hero() {
               </h1>
               
               <p className="text-xl text-white/90 max-w-xl">
-                Join AlphaCore Fitness and experience the perfect blend of science-based training 
+                Join Gym Temperature and experience the perfect blend of science-based training 
                 and high-energy motivation to achieve your fitness goals.
               </p>
 
