@@ -90,7 +90,7 @@ export default function ContactSection() {
                     <Mail className="h-6 w-6 text-chart-1" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">info@alphacorefitness.com</p>
+                      <p className="text-muted-foreground">info@Gym Temperaturefitness.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

@@ -121,8 +121,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-xl mb-2 uppercase">Email</h3>
                     <p className="text-lg">
-                      info@alphacore.com<br />
-                      support@alphacore.com
+                      info@Gym Temperature.com<br />
+                      support@Gym Temperature.com
                     </p>
                   </div>
                 </div>

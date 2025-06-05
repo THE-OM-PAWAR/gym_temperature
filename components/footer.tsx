@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Dumbbell className="w-7 h-7 text-chart-1" strokeWidth={2.5} />
-              <span className="font-bebas text-2xl tracking-wider">ALPHACORE</span>
+              <span className="font-bebas text-2xl tracking-wider">Gym Temperature</span>
             </div>
             <p className="text-muted-foreground text-sm max-w-xs">
               Train Smart. Lift Heavy. Stay Consistent. Join our community of dedicated fitness enthusiasts.
@@ -72,7 +72,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-chart-1" />
-                <p className="text-sm text-muted-foreground">info@alphacorefitness.com</p>
+                <p className="text-sm text-muted-foreground">info@Gym Temperaturefitness.com</p>
               </div>
             </div>
             <div className="pt-2">
