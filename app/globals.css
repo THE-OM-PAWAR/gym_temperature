@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 0%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 0%;
+    --chart-1: 50 100% 50%;  /* Vibrant yellow */
+    --chart-2: 0 0% 0%;      /* Black */
+    --chart-3: 0 0% 100%;    /* White */
+    --chart-4: 50 100% 60%;  /* Lighter yellow */
+    --chart-5: 50 100% 40%;  /* Darker yellow */
+    --radius: 0;             /* Sharp corners for neo-brutalism */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+/* Custom font variables */
+:root {
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* Use the custom font variables */
+.font-bebas {
+  font-family: var(--font-bebas);
+  letter-spacing: 0.05em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  @apply bg-white;
+}
+
+/* Container padding adjustments */
+.container {
+  @apply px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl;
+}
+
+/* Section spacing */
+section {
+  @apply py-16 sm:py-20 lg:py-24 bg-white;
+}
+
+/* Neo-brutalism styles */
+.neo-card {
+  @apply bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 text-black;
+}
+
+.neo-card:hover {
+  @apply shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] translate-x-[-4px] translate-y-[-4px];
+}
+
+.neo-button {
+  @apply bg-[#FFD100] text-black font-bold border-4 border-black px-6 py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition-all duration-300;
+}
+
+.neo-button:hover {
+  @apply shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] translate-x-[-3px] translate-y-[-3px];
+}
+
+.neo-input {
+  @apply bg-white border-4 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[-2px] focus:translate-y-[-2px] transition-all duration-300 focus:outline-none text-black;
+}
+
+.neo-heading {
+  @apply font-bold relative inline-block text-black;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.neo-heading::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-3 bg-[#FFD100] -z-10;
+}
+
+/* Responsive typography with neo-brutalism style */
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl md:text-5xl font-bold text-black;
+}
+
+h3 {
+  @apply text-2xl sm:text-3xl font-bold text-black;
+}
+
+p {
+  @apply text-black;
+}
+
+/* Noise texture overlay for brutalist aesthetic */
+.noise-bg {
+  position: relative;
+  @apply bg-white;
+}
+
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Neo-brutalist grid lines */
+.grid-lines {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  @apply bg-white;
+}
+
+/* Offset border effect for images */
+.neo-image-container {
+  @apply relative inline-block;
+}
+
+.neo-image-container::after {
+  content: '';
+  @apply absolute top-4 left-4 w-full h-full border-4 border-[#FFD100] -z-10;
+}
+
+/* Highlighted text effect */
+.highlight {
+  @apply bg-[#FFD100] px-1 font-bold text-black;
+}
+
+/* Strikethrough effect */
+.strikethrough {
+  @apply relative;
+}
+
+.strikethrough::after {
+  content: '';
+  @apply absolute left-0 top-1/2 w-full h-1 bg-[#FFD100];
+}
+
+/* Responsive spacing utilities */
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 bg-white;
+}
+
+.content-margin {
+  @apply my-8 sm:my-12 lg:my-16;
+}
+
+/* Responsive grid layouts */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10;
+}
+
+/* Main content wrapper */
+main {
+  @apply bg-white;
+}
