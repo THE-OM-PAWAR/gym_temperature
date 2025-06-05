@@ -19,7 +19,7 @@ export default function About() {
       
       <div className="container relative z-10">
         <SectionHeading 
-          title="About AlphaCore" 
+          title="About Gym Temperature" 
           subtitle="Where science meets motivation in a community of strength."
         />
         
@@ -52,7 +52,7 @@ export default function About() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Our Community</h3>
               <p className="text-muted-foreground">
-                When you join AlphaCore, you become part of a supportive community of like-minded 
+                When you join Gym Temperature, you become part of a supportive community of like-minded 
                 individuals who push each other to be better every day. Our trainers and members 
                 create an atmosphere of positive energy and mutual growth.
               </p>

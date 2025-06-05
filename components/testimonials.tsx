@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: "Jennifer L.",
     avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "AlphaCore completely changed my approach to fitness. The trainers focus on proper form and progressive overload which has helped me get stronger than I ever thought possible.",
+    quote: "Gym Temperature completely changed my approach to fitness. The trainers focus on proper form and progressive overload which has helped me get stronger than I ever thought possible.",
     rating: 5,
   },
   {
@@ -25,13 +25,13 @@ const testimonials = [
   {
     name: "Sophia R.",
     avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "The nutrition coaching alongside my training plan has been a game-changer. I've seen more progress in 3 months at AlphaCore than I did in years at other gyms.",
+    quote: "The nutrition coaching alongside my training plan has been a game-changer. I've seen more progress in 3 months at Gym Temperature than I did in years at other gyms.",
     rating: 5,
   },
   {
     name: "David K.",
     avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200",
-    quote: "As someone who was intimidated by gyms, AlphaCore's supportive environment made all the difference. The trainers are knowledgeable and approachable.",
+    quote: "As someone who was intimidated by gyms, Gym Temperature's supportive environment made all the difference. The trainers are knowledgeable and approachable.",
     rating: 5,
   },
 ]
@@ -55,7 +55,7 @@ export default function Testimonials() {
       <div className="container relative z-10">
         <SectionHeading 
           title="Success Stories" 
-          subtitle="Don't just take our word for it. Hear what our members have to say about their AlphaCore experience."
+          subtitle="Don't just take our word for it. Hear what our members have to say about their Gym Temperature experience."
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -142,7 +142,7 @@ export default function Testimonials() {
             
             <p className="text-muted-foreground">
               Our members achieve remarkable results through commitment, smart training, and the 
-              support of our expert coaches and community. Every AlphaCore success story is 
+              support of our expert coaches and community. Every Gym Temperature success story is 
               built on the foundations of consistent effort and evidence-based methods.
             </p>
             

@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 z-50">
           <Dumbbell className="w-8 h-8 text-[#FFD100]" strokeWidth={3} />
-          <span className="font-bebas text-3xl tracking-wider">ALPHACORE</span>
+          <span className="font-bebas text-3xl tracking-wider">Gym Temperature</span>
         </Link>
 
         {/* Desktop navigation */}
@@ -86,7 +86,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
                   <Dumbbell className="w-7 h-7 text-[#FFD100]" strokeWidth={3} />
-                  <span className="font-bebas text-xl tracking-wider">ALPHACORE</span>
+                  <span className="font-bebas text-xl tracking-wider">Gym Temperature</span>
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                   <X className="h-6 w-6" />
